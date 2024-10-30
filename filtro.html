@@ -1,24 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es"> <!-- Cambie el idoma de la pagina -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="filtro.css">
   <title>Filtros en JS</title>
+  <!-- Agrege link para el searchIcon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-
-  <div>
-      <input type="text" placeholder="Seleccioná un color o tipo">
-      <button>Filtrar</button>
-      <h1>Lista de productos </h1>
-      <div id="lista-de-productos">
-    </div>
-  </div>
+  <main> <!-- Agrege etiqueta semantica -->
+    <section class="buscadorSection"> <!-- Agrege etiqueta semantica para la sección del buscador -->
+        <input class="buscador" type="text" placeholder="Buscador por color o tipo"> <!-- Cambie el placeholder -->
+        <button type="submit" class="searchButton"> <!-- Agrege clase para estilos de boton -->
+          <i class="fa-solid fa-magnifying-glass searchIcon"></i> <!-- Agrege un icono para el boton -->
+        </button>
+    </section>
+    <section class="listaSection"> <!-- Agrege etiqueta semantica para la sección de lista de productos -->
+        <h1 class="title"> Lista de productos </h1> <!-- Agrege clase pero el estilo del titulo -->
+        <div id="lista-productos" class="lista-productos"> <!-- Cambie el id y agrege la clase -->
+        </div>
+    </section>
+  </main>
   <script src="../filtro.js"></script>
 </body>
-
 </html>
